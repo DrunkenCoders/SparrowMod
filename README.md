@@ -18,7 +18,7 @@ for you, you go and make amazing plugins. It’s as easy as that!
 This repository contains the wrapper/mod implementation.
 
 Differences (CanaryMod --> SparrowMod)
-======================================
+--------------------------------------
 1. Quick upgrade to the new version Minecraft.
 2. Implementation support Forge (in development).
 3. The harsh Russian code optimization. >:о
@@ -33,7 +33,7 @@ and generally following the [Sun/Oracle coding standards](http://www.oracle.com/
 
 License
 -------
-Copyrighy &copy; 2014, Drunken Coders
+Copyrighy &copy; 2014, Drunken Coders  
 Copyright &copy; 2012-2014, CanaryMod Team  
 Under the management of FallenMoonNetwork, PlayBlack, and Visual Illusions Entertainment  
 All rights reserved.
