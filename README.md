@@ -1,12 +1,10 @@
-CanaryMod
+SparrowMod
 =========
 
-[Latest Build](http://ci.visualillusionsent.net/job/CanaryMod/lastBuild/net.canarymod$CanaryMod/)  
-[Latest Successful Build](http://ci.visualillusionsent.net/job/CanaryMod/lastSuccessfulBuild/net.canarymod$CanaryMod/)  
-
-CanaryMod is a Minecraft Server wrapper and library with built-in data  
+SparrowMod based on CanaryMod by CanaryModTeam.
+This is a Minecraft Server wrapper and library with built-in data  
 management features as well as player permissions and groups management.  
-CanaryMod provides a stable and feature-rich framework that makes sure that  
+SparrowMod provides a stable and feature-rich framework that makes sure that  
 Plugins written today, will still work in months without the need of updating  
 on each Minecraft update. As server owner, this allows you to spend more time  
 on managing your server, making it awesome, instead of waiting for all your  
@@ -19,6 +17,13 @@ for you, you go and make amazing plugins. It’s as easy as that!
 
 This repository contains the wrapper/mod implementation.
 
+Differences (CanaryMod --> SparrowMod)
+======================================
+1. Quick upgrade to the new version Minecraft.
+2. Implementation support Forge (in development).
+3. The harsh Russian code optimization. >:о
+4. Full support CanaryMod Plugins.
+
 Pull Requests
 =============
 
@@ -26,23 +31,9 @@ It helps us when others take the time to submit fixes rather than just pointing 
 However, We have standards for the sources we have. Things like formatting  
 and generally following the [Sun/Oracle coding standards](http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html)  
 
-Source Formatting and requirements
--------------
-
-* No tabs; use 4 spaces instead.
-* No trailing whitespaces.
-* No CRLF line endings, LF only.
-  * Git can handle this by auto-converting CRLF line endings into LF when you commit, and vice versa when it checks out code onto your filesystem.  
-    You can turn on this functionality with the core.autocrlf setting.  
-    If you’re on a Windows machine, set it to true — this converts LF endings into CRLF when you check out code. (git config --global core.autocrlf true)  
-  * Eclipse: http://stackoverflow.com/a/11596227/532590
-  * NetBeans: http://stackoverflow.com/a/1866385/532590
-* JavaDocs well written (as necessary)
-* Matching how we format statements
-
 License
 -------
-
+Copyrighy &copy; 2014, Drunken Coders
 Copyright &copy; 2012-2014, CanaryMod Team  
 Under the management of FallenMoonNetwork, PlayBlack, and Visual Illusions Entertainment  
 All rights reserved.
@@ -67,10 +58,10 @@ OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,  
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  
 
-Any source code from the Minecraft Server is not owned by CanaryMod Team, FallenMoonNetwork, PlayBlack, Viusal Illusions Entertainment,  
+Any source code from the Minecraft Server is not owned by Drunken Coders, CanaryMod Team, FallenMoonNetwork, PlayBlack, Viusal Illusions Entertainment,  
 or its contributors and is not covered by above license.  
 Usage of source code from the Minecraft Server is subject to the Minecraft End User License Agreement as set forth by Mojang AB.  
 The Minecraft EULA can be viewed at https://account.mojang.com/documents/minecraft_eula  
-FallenMoonNetwork, CanaryMod Team, PlayBlack, Visual Illusions Entertainment, CanaryLib, CanaryMod, and its contributors are NOT affiliated with, endorsed,  
+Drunken Coders, FallenMoonNetwork, CanaryMod Team, PlayBlack, Visual Illusions Entertainment, SparrowMod, CanaryLib, CanaryMod, and its contributors are NOT affiliated with, endorsed,  
 or sponsored by Mojang AB, makers of Minecraft.  
 "Minecraft" is a trademark of Notch Development AB
