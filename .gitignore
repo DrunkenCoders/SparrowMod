@@ -11,3 +11,4 @@
 /bin
 /.idea
 *.iml
+log4j2.xml
