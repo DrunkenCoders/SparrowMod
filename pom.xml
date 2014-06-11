@@ -1,18 +1,19 @@
 <!--
-  Maven build file for CanaryMod
+  Maven build file for SparrowMod
+  Copyright (c) 2014 Drunken Coders <https://github.com/DrunkenCoders>
   Copyright (c) 2012-2014 CanaryMod Team <http://www.canarymod.net>
-  CanaryMod is available under the BSD 3-Clause License
+  SparrowMod is available under the BSD 3-Clause License
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>net.canarymod</groupId>
-    <artifactId>CanaryMod</artifactId>
+    <artifactId>SparrowMod</artifactId>
     <packaging>jar</packaging>
-    <version>1.0-RC-4-SNAPSHOT</version>
-    <name>CanaryMod</name>
-    <url>http://www.canarymod.net</url>
-    <inceptionYear>2012</inceptionYear>
+    <version>1.0-RC-4-SM_CM</version>
+    <name>SparrowMod</name>
+    <url>https://github.com/DrunkenCoders</url>
+    <inceptionYear>2014</inceptionYear>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <minecraft.server.version>1.7.2C</minecraft.server.version>
@@ -24,6 +25,7 @@
             <name>BSD 3-Clause License</name>
             <url>http://opensource.org/licenses/BSD-3-Clause</url>
             <comments>
+                Copyright (C) 2014, Drunken Coders
                 Copyright (C) 2012-2014, CanaryMod Team
                 Under the management of FallenMoonNetwork, PlayBlack, and Visual Illusions Entertainment
                 All rights reserved.
@@ -48,11 +50,11 @@
                 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
                 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-                Any source code from the Minecraft Server is not owned by CanaryMod Team, FallenMoonNetwork, PlayBlack, Viusal Illusions Entertainment,
+                Any source code from the Minecraft Server is not owned by Drunken Coders, CanaryMod Team, FallenMoonNetwork, PlayBlack, Viusal Illusions Entertainment,
                 or its contributors and is not covered by above license.
                 Usage of source code from the Minecraft Server is subject to the Minecraft End User License Agreement as set forth by Mojang AB.
                 The Minecraft EULA can be viewed at https://account.mojang.com/documents/minecraft_eula
-                FallenMoonNetwork, CanaryMod Team, PlayBlack, Visual Illusions Entertainment, CanaryLib, CanaryMod, and its contributors are NOT affiliated with, endorsed,
+                Drunken Coders, FallenMoonNetwork, CanaryMod Team, PlayBlack, Visual Illusions Entertainment, SparrowMod, CanaryLib, CanaryMod, and its contributors are NOT affiliated with, endorsed,
                 or sponsored by Mojang AB, makers of Minecraft.
                 "Minecraft" is a trademark of Notch Development AB
             </comments>
@@ -156,9 +158,9 @@
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
                         <manifestEntries>
-                            <Implementation-Title>CanaryMod</Implementation-Title>
+                            <Implementation-Title>SparrowMod</Implementation-Title>
                             <Implementation-Version>${project.version}</Implementation-Version>
-                            <Implementation-Vendor>CanaryMod Team</Implementation-Vendor>
+                            <Implementation-Vendor>Drunken Coders</Implementation-Vendor>
                             <Implementation-Vendor-Id>net.canarymod</Implementation-Vendor-Id>
                             <Specification-Title>CanaryLib</Specification-Title>
                             <Specification-Version>${api.version}</Specification-Version>
