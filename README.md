@@ -1,7 +1,7 @@
 SparrowMod
 =========
 
-SparrowMod based on CanaryMod by CanaryModTeam.
+SparrowMod based on CanaryMod by CanaryModTeam.  
 This is a Minecraft Server wrapper and library with built-in data  
 management features as well as player permissions and groups management.  
 SparrowMod provides a stable and feature-rich framework that makes sure that  
