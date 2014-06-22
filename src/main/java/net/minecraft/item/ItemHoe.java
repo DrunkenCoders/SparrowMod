@@ -29,22 +29,14 @@ public class ItemHoe extends Item {
         }
         else {
             Block block = world.a(i0, i1, i2);
+            Block block1 = Blocks.ak;
+            // CanaryMod: ItemUse
+            CanaryBlock clicked = (CanaryBlock) world.getCanaryWorld().getBlockAt(i0, i1, i2);
+            clicked.setFaceClicked(BlockFace.fromByte((byte) i3));
+            ItemUseHook hook = (ItemUseHook) new ItemUseHook(((EntityPlayerMP) entityplayer).getPlayer(), itemstack.getCanaryItem(), clicked).call();
+            //
 
-            if ((i3 == 0 && world.a(i0, i1 + 1, i2).o() != Material.a && (block != Blocks.c || block != Blocks.d))) {
-                return false;
-            }
-            else {
-                Block block1 = Blocks.ak;
-                // CanaryMod: ItemUse
-                CanaryBlock clicked = (CanaryBlock) world.getCanaryWorld().getBlockAt(i0, i1, i2);
-
-                clicked.setFaceClicked(BlockFace.fromByte((byte) i3));
-                ItemUseHook hook = (ItemUseHook) new ItemUseHook(((EntityPlayerMP) entityplayer).getPlayer(), itemstack.getCanaryItem(), clicked).call();
-                if (hook.isCanceled()) {
-                    return false;
-                }
-                //
-
+            if (i3 != 0 && world.a(i0, i1 + 1, i2).o() == Material.a && (block == Blocks.c || block == Blocks.d) && !hook.isCanceled()) {
                 world.a((double) ((float) i0 + 0.5F), (double) ((float) i1 + 0.5F), (double) ((float) i2 + 0.5F), block1.H.e(), (block1.H.c() + 1.0F) / 2.0F, block1.H.d() * 0.8F);
                 if (world.E) {
                     return true;
@@ -54,6 +46,8 @@ public class ItemHoe extends Item {
                     itemstack.a(1, (EntityLivingBase) entityplayer);
                     return true;
                 }
+            } else {
+                return false;
             }
         }
     }
